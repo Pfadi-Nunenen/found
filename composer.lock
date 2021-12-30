@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98542b9a044d53672f0761a5c3cdf731",
+    "content-hash": "cfe89cfb8945c9ba84a3eb31194ec30e",
     "packages": [
         {
             "name": "airbrake/phpbrake",
