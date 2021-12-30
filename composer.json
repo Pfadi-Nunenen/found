@@ -12,8 +12,8 @@
         "return"
     ],
     "require": {
-        "php": "^7.3 || 8.0",
-        "anhskohbo/no-captcha": "3.3.0",
+        "php": "^7.3|^8.0",
+        "anhskohbo/no-captcha": "^3.3",
         "fideloper/proxy": "4.4.1",
         "fruitcake/laravel-cors": "2.0.4",
         "guzzlehttp/guzzle": "7.4.1",
@@ -27,7 +27,7 @@
         "barryvdh/laravel-debugbar": "3.6.2",
         "barryvdh/laravel-ide-helper": "2.10.0",
         "facade/ignition": "2.11.2",
-        "fzaninotto/faker": "1.9.2",
+        "fakerphp/faker": "^1.9.2",
         "mockery/mockery": "1.4.4",
         "nunomaduro/collision": "5.10.0",
         "phpunit/phpunit": "9.5.11"
@@ -35,7 +35,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
     },
     "extra": {
         "laravel": {
