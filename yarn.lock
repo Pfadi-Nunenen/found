@@ -1609,9 +1609,9 @@ clean-css@^4.2.3:
   dependencies:
     source-map "~0.6.0"
 
-"clean-css@^4.2.3 || ^5.1.2":
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.2.2.tgz#d3a7c6ee2511011e051719838bdcf8314dc4548d"
+clean-css@^5.2.4:
+  version "5.2.4"
+  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.2.4.tgz#982b058f8581adb2ae062520808fb2429bd487a4"
   dependencies:
     source-map "~0.6.0"
 
@@ -2891,9 +2891,9 @@ klona@^2.0.4, klona@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.5.tgz#d166574d90076395d9963aa7a928fabb8d76afbc"
 
-laravel-mix@^6.0.42:
-  version "6.0.42"
-  resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-6.0.42.tgz#cfbf0389243b2911ca41531bcb5ddea30badcbda"
+laravel-mix@^6.0.43:
+  version "6.0.43"
+  resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-6.0.43.tgz#6a9d67419e891f5075fc08bfff47770bf1f00d8a"
   dependencies:
     "@babel/core" "^7.15.8"
     "@babel/plugin-proposal-object-rest-spread" "^7.15.6"
@@ -2911,7 +2911,7 @@ laravel-mix@^6.0.42:
     babel-loader "^8.2.3"
     chalk "^4.1.2"
     chokidar "^3.5.2"
-    clean-css "^4.2.3 || ^5.1.2"
+    clean-css "^5.2.4"
     cli-table3 "^0.6.0"
     collect.js "^4.28.5"
     commander "^7.2.0"
