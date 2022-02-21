@@ -31,7 +31,7 @@
         "laravel/sail": "1.13.2",
         "mockery/mockery": "^1.4",
         "nunomaduro/collision": "5.11.0",
-        "phpunit/phpunit": "9.5.13"
+        "phpunit/phpunit": "9.5.14"
     },
     "config": {
         "optimize-autoloader": true,
