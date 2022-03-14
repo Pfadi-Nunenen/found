@@ -1303,8 +1303,8 @@ autoprefixer@^10.4.0:
     postcss-value-parser "^4.2.0"
 
 axios@^0.26:
-  version "0.26.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.0.tgz#9a318f1c69ec108f8cd5f3c3d390366635e13928"
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.1.tgz#1ede41c51fcf51bbbd6fd43669caaa4f0495aaa9"
   dependencies:
     follow-redirects "^1.14.8"
 
