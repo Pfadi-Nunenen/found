@@ -15,7 +15,7 @@
         "php": "^7.3|^8.0",
         "anhskohbo/no-captcha": "^3.3",
         "fideloper/proxy": "^4.4",
-        "fruitcake/laravel-cors": "^2.0",
+        "fruitcake/laravel-cors": "^3.0",
         "guzzlehttp/guzzle": "^7.4.1",
         "kouz/laravel-airbrake": "^0.7.0",
         "laravel/framework": "8.83.8",
