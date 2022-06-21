@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Item extends Model
 {
+    use HasFactory;
+
     protected $table = 'items';
 
     protected $fillable = [
@@ -24,16 +27,17 @@ class Item extends Model
 
     public function group()
     {
-        return $this->belongsTo('App\Models\Group');
+        return $this->belongsTo(App\Models\Group::class);
     }
 
     public function event()
     {
-        return $this->belongsTo('App\Models\Event');
+        return $this->belongsTo(App\Models\Event::class);
+        return $this->belongsTo(App\Models\Group::class);
     }
 
     public function claim()
     {
-        return $this->belongsTo('App\Models\Customer');
+        return $this->belongsTo(App\Models\Customer::class);
     }
 }
