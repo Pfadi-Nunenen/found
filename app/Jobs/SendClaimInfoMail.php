@@ -2,15 +2,14 @@
 
 namespace App\Jobs;
 
-use App\Mail\ClaimInfoMail;
 use App\Models\User;
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use App\Mail\ClaimMail;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 
 class SendClaimInfoMail implements ShouldQueue
 {
@@ -39,7 +38,7 @@ class SendClaimInfoMail implements ShouldQueue
     {
         $users = User::all();
 
-        foreach($users as $user){
+        foreach ($users as $user) {
             $email = new ClaimInfoMail($this->claim, $this->item, $user);
             Mail::to($user->email)->queue($email);
         }
