@@ -3,9 +3,9 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use App\Models\Claim;
 
 class ClaimInfoMail extends Mailable
 {
@@ -18,9 +18,7 @@ class ClaimInfoMail extends Mailable
     /**
      * Create a new message instance.
      *
-     * @param $claim
-     * @param $item
-     * @param $user
+     * @return void
      */
     public function __construct($claim, $item, $user)
     {
