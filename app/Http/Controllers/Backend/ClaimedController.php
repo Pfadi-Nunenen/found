@@ -27,22 +27,17 @@ class ClaimedController extends Controller
     public function update($cid, Request $request)
     {
         $action = $request->action;
+        $claim = Customer::with('Item')->find($cid)->first();
 
         if ($action == 'returned') {
-            $claim = Customer::with('Item')->find($cid)->first();
+
 
             $claim->item->item_returned = true;
             $claim->push();
-
-            print_r($claim);
-        } elseif ($action == 'sold') {
-            $claim = Customer::with('Item')->find($cid)->first();
-
+        } else if ($action == 'sold') {
             $claim->item->item_sold = true;
             $claim->push();
-        }elseif($action == 'assign'){
-            $claim = Customer::with('Item')->find($cid)->first();
-
+        } else if ($action == 'assign') {
             $claim->user_id = $request->assign_user;
             $claim->push();
         }
