@@ -30,14 +30,12 @@ class ClaimedController extends Controller
         $claim = Customer::with('Item')->find($cid)->first();
 
         if ($action == 'returned') {
-
-
             $claim->item->item_returned = true;
             $claim->push();
-        } else if ($action == 'sold') {
+        } elseif ($action == 'sold') {
             $claim->item->item_sold = true;
             $claim->push();
-        } else if ($action == 'assign') {
+        } elseif ($action == 'assign') {
             $claim->user_id = $request->assign_user;
             $claim->push();
         }

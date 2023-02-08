@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Event;
-use App\Models\Group;
 use DB;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -46,20 +45,19 @@ class EventsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param Request $request
-     *
+     * @param  Request  $request
      * @return RedirectResponse
      */
     public function store(Request $request)
     {
         $event_name = $request->input('event_name');
         $event_date = $request->input('event_date');
-        $event_active = !empty($request->input('event_active')) ? true : false;
+        $event_active = ! empty($request->input('event_active')) ? true : false;
 
         Event::create([
             'event_name' => $event_name,
             'event_date' => $event_date,
-            'event_active' => $event_active
+            'event_active' => $event_active,
         ]);
 
         return redirect()->back()->with('message', 'Event wurde erstellt.');
@@ -69,7 +67,6 @@ class EventsController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param $eid
-     *
      * @return Application|Factory|View
      */
     public function edit($eid)
@@ -82,21 +79,20 @@ class EventsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param Request $request
+     * @param  Request  $request
      * @param $eid
-     *
      * @return RedirectResponse
      */
     public function update(Request $request, $eid)
     {
         $event_name = $request->input('event_name');
         $event_date = $request->input('event_date');
-        $event_active = !empty($request->input('event_active')) ? true : false;
+        $event_active = ! empty($request->input('event_active')) ? true : false;
 
         DB::table('events')->where('id', '=', $eid)->update([
             'event_name' => $event_name,
             'event_date' => $event_date,
-            'event_active' => $event_active
+            'event_active' => $event_active,
         ]);
 
         return redirect()->back()->with('message', 'Event wurde aktualisiert.');
@@ -106,7 +102,6 @@ class EventsController extends Controller
      * Remove the specified resource from storage.
      *
      * @param $eid
-     *
      * @return RedirectResponse
      */
     public function destroy($eid)

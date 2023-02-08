@@ -14,6 +14,6 @@ class Event extends Model
     protected $fillable = [
         'event_name',
         'event_date',
-        'evento_Active'
+        'evento_Active',
     ];
 }

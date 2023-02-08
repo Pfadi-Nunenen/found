@@ -16,8 +16,7 @@ use Illuminate\View\View;
 class ItemsController extends Controller
 {
     /**
-     * @param Request $request
-     *
+     * @param  Request  $request
      * @return Application|Factory|View
      */
     public function index(Request $request)
@@ -52,8 +51,7 @@ class ItemsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param Request $request
-     *
+     * @param  Request  $request
      * @return RedirectResponse
      */
     public function store(Request $request)
@@ -62,14 +60,14 @@ class ItemsController extends Controller
         $item_name = $request->input('item_name');
         $item_color = $request->input('item_color');
         $item_size = $request->input('item_size');
-        $item_returned = !empty($request->input('item_returned')) ? true : false;
+        $item_returned = ! empty($request->input('item_returned')) ? true : false;
         $item_price = empty($request->input('item_price')) ? null : $request->input('item_price') * 100;
-        $item_sold = !empty($request->input('item_sold')) ? true : false;
+        $item_sold = ! empty($request->input('item_sold')) ? true : false;
         $item_event = $request->input('item_event');
         $item_group = $request->input('item_group');
 
         if ($request->file('item_img')) {
-            $img_name = time() .'.' . $request->file('item_img')->extension();
+            $img_name = time().'.'.$request->file('item_img')->extension();
             $request->file('item_img')->move(storage_path('app/public/img'), $img_name);
         } else {
             $img_name = null;
@@ -95,7 +93,6 @@ class ItemsController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param $iid
-     *
      * @return Application|Factory|View
      */
     public function edit($iid)
@@ -110,9 +107,8 @@ class ItemsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param Request $request
+     * @param  Request  $request
      * @param $iid
-     *
      * @return RedirectResponse
      */
     public function update(Request $request, $iid)
@@ -121,14 +117,14 @@ class ItemsController extends Controller
         $item_name = $request->input('item_name');
         $item_color = $request->input('item_color');
         $item_size = $request->input('item_size');
-        $item_returned = !empty($request->input('item_returned')) ? true : false;
+        $item_returned = ! empty($request->input('item_returned')) ? true : false;
         $item_price = empty($request->input('item_price')) ? null : $request->input('item_price') * 100;
-        $item_sold = !empty($request->input('item_sold')) ? true : false;
+        $item_sold = ! empty($request->input('item_sold')) ? true : false;
         $item_event = $request->input('item_event');
         $item_group = $request->input('item_group');
 
         if ($request->file('item_img')) {
-            $img_name = time() .'.' . $request->file('item_img')->extension();
+            $img_name = time().'.'.$request->file('item_img')->extension();
             $request->file('item_img')->move(storage_path('app/public/img'), $img_name);
         } else {
             $img_name = null;
@@ -159,7 +155,6 @@ class ItemsController extends Controller
      * Remove the specified resource from storage.
      *
      * @param $iid
-     *
      * @return RedirectResponse
      */
     public function destroy($iid)

@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Event;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use App\Models\Event;
 
 class EventsSeeder extends Seeder
 {
@@ -19,7 +19,7 @@ class EventsSeeder extends Seeder
 
         if ($event == null) {
             $event_date = Carbon::now()->subDays(100)->format('Y.m.d H:i:s');
-            $event = Event::create(['event_name' => 'JotaJoti ' . date('Y'), 'event_date' => $event_date, 'event_active' => true]);
+            $event = Event::create(['event_name' => 'JotaJoti '.date('Y'), 'event_date' => $event_date, 'event_active' => true]);
             $event->save();
         }
     }

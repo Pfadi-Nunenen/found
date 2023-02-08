@@ -5,9 +5,8 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Jobs\SendClaimInfoMail;
 use App\Jobs\SendClaimMail;
-use App\Models\Group;
-use App\Models\Item;
 use App\Models\Customer;
+use App\Models\Item;
 use Illuminate\Http\Request;
 
 class SellController extends Controller
@@ -37,7 +36,7 @@ class SellController extends Controller
     {
         $item = Item::with(['group', 'event'])->findOrFail($iid);
 
-        return view('frontend.sell.item', ['item'=> $item]);
+        return view('frontend.sell.item', ['item' => $item]);
     }
 
     public function claim(Request $request, $iid)

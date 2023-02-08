@@ -12,8 +12,7 @@ class UsersController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param Request $request
-     *
+     * @param  Request  $request
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
@@ -31,6 +30,7 @@ class UsersController extends Controller
 
         return view('backend.users.users', ['users' => $users]);
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -40,11 +40,11 @@ class UsersController extends Controller
     {
         return view('backend.users.add');
     }
+
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -69,11 +69,11 @@ class UsersController extends Controller
             return redirect()->back()->with('error', 'Passwort wurde nicht korrekt wiederholt!');
         }
     }
+
     /**
      * Show the form for editing the specified resource.
      *
      * @param $uid
-     *
      * @return \Illuminate\Http\Response
      */
     public function edit($uid)
@@ -82,12 +82,12 @@ class UsersController extends Controller
 
         return view('backend.users.edit', ['users' => $users]);
     }
+
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param                          $uid
-     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param    $uid
      * @return void
      */
     public function update(Request $request, $uid)
@@ -116,11 +116,11 @@ class UsersController extends Controller
             return redirect()->back()->with('error', 'Passwort wurde nicht korrekt wiederholt!');
         }
     }
+
     /**
      * Remove the specified resource from storage.
      *
      * @param $uid
-     *
      * @return \Illuminate\Http\Response
      */
     public function destroy($uid)

@@ -13,10 +13,11 @@ class Customer extends Model
 
     protected $fillable = [
         'customer_name',
-        'customer_mail'
+        'customer_mail',
     ];
 
-    public function item() {
+    public function item()
+    {
         return $this->hasOne(App\Model\Items::class);
     }
 }

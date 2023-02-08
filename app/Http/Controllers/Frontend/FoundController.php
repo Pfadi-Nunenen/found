@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Jobs\SendClaimInfoMail;
 use App\Jobs\SendClaimMail;
+use App\Models\Customer;
 use App\Models\Event;
 use App\Models\Group;
 use App\Models\Item;
-use App\Models\Customer;
 use Illuminate\Http\Request;
 
 class FoundController extends Controller
@@ -55,7 +55,7 @@ class FoundController extends Controller
     {
         $item = Item::with(['group', 'event'])->findOrFail($iid);
 
-        return view('frontend.found.item', ['item'=> $item]);
+        return view('frontend.found.item', ['item' => $item]);
     }
 
     public function claim(Request $request, $iid)

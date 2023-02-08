@@ -33,6 +33,7 @@ class Item extends Model
     public function event()
     {
         return $this->belongsTo(App\Models\Event::class);
+
         return $this->belongsTo(App\Models\Group::class);
     }
 

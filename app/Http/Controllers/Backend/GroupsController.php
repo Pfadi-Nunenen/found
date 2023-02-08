@@ -45,14 +45,13 @@ class GroupsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param Request $request
-     *
+     * @param  Request  $request
      * @return RedirectResponse
      */
     public function store(Request $request)
     {
         $group_name = $request->input('group_name');
-        $group_active = $request->input('group_active') == "on";
+        $group_active = $request->input('group_active') == 'on';
 
         Group::create([
             'group_name' => $group_name,
@@ -66,7 +65,6 @@ class GroupsController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param $gid
-     *
      * @return Application|Factory|View
      */
     public function edit($gid)
@@ -79,9 +77,8 @@ class GroupsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param Request $request
+     * @param  Request  $request
      * @param $gid
-     *
      * @return RedirectResponse
      */
     public function update(Request $request, $gid)
@@ -91,7 +88,7 @@ class GroupsController extends Controller
 
         DB::table('groups')->where('id', '=', $gid)->update([
             'group_name' => $group_name,
-            'group_active' => $group_active
+            'group_active' => $group_active,
         ]);
 
         return redirect()->back()->with('message', 'Gruppe wurde aktualisiert.');
@@ -101,7 +98,6 @@ class GroupsController extends Controller
      * Remove the specified resource from storage.
      *
      * @param $gid
-     *
      * @return RedirectResponse
      */
     public function destroy($gid)
