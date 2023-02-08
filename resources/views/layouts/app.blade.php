@@ -9,12 +9,9 @@
         <meta name="csrf-token" content="{{ csrf_token() }}" />
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
-
-        <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
+        
+        <!-- VITE -->
+        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
         <!-- Fonts -->
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
