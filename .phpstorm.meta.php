@@ -134,7 +134,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -328,7 +328,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -522,7 +522,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -716,7 +716,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -910,7 +910,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -1104,7 +1104,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -1298,7 +1298,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -1492,7 +1492,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -1686,7 +1686,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -1880,7 +1880,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -2074,7 +2074,7 @@ namespace PHPSTORM_META {
             'Illuminate\Session\Console\SessionTableCommand' => \Illuminate\Session\Console\SessionTableCommand::class,
             'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
             'Illuminate\Testing\ParallelTesting' => \Illuminate\Testing\ParallelTesting::class,
-            'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+            'NunoMaduro\Collision\Provider' => \NunoMaduro\Collision\Provider::class,
             'Spatie\FlareClient\Flare' => \Spatie\FlareClient\Flare::class,
             'Spatie\Ignition\Config\IgnitionConfig' => \Spatie\Ignition\Config\IgnitionConfig::class,
             'Spatie\Ignition\Contracts\ConfigManager' => \Spatie\Ignition\Config\FileConfigManager::class,
@@ -2145,6 +2145,10 @@ namespace PHPSTORM_META {
         ]));
 
 
+    override(\Illuminate\Foundation\Testing\Concerns\InteractsWithContainer::mock(0), map(["" => "@&\Mockery\MockInterface"]));
+    override(\Illuminate\Foundation\Testing\Concerns\InteractsWithContainer::partialMock(0), map(["" => "@&\Mockery\MockInterface"]));
+    override(\Illuminate\Foundation\Testing\Concerns\InteractsWithContainer::instance(0), type(1));
+    override(\Illuminate\Foundation\Testing\Concerns\InteractsWithContainer::spy(0), map(["" => "@&\Mockery\MockInterface"]));
     override(\Illuminate\Support\Arr::add(0), type(0));
     override(\Illuminate\Support\Arr::except(0), type(0));
     override(\Illuminate\Support\Arr::first(0), elementType(0));
