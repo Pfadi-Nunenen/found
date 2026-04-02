@@ -9,7 +9,7 @@
         "axios": "^1.13",
         "bootstrap": "^5.3.8",
         "font-awesome": "^4.7.0",
-        "laravel-vite-plugin": "^3.0.0",
+        "laravel-vite-plugin": "^3.0.1",
         "lodash": "^4.18.1",
         "postcss": "^8.5.8",
         "sass": "^1.98.0",
